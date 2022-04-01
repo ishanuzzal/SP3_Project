@@ -24,7 +24,12 @@ text-decoration: none;
 
 .nav-link{
   font-size: 1.0rem;
+  border: none;
   color: var(--text-color)!important;
+}
+
+.nav-link:hover{
+  border-bottom: 2px solid var(--main-color);
 }
 
 .cart-icon{
