@@ -43,6 +43,14 @@ text-decoration: none;
   max-width: 100%;
   
 }
+
+@media only screen and (max-width: 600px) {
+  .carousel-inner .carousel-item img{
+    height: 40vh;
+    max-width: 100%;
+    
+  }
+}
 /* shop css started */
 .shop-sec h1{
   font-size: 2.0rem;
