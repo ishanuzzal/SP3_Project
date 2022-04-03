@@ -98,9 +98,10 @@ buy.addEventListener("click",buyButtonClicked);
 
 function buyButtonClicked(){
     alert("Ordered is placed");
-    let cartcont = document.getElementById("cart-content")[0];
+    let cartcont = document.getElementsByClassName("cart-content")[0];
+    console.log(cartcont);
     while(cartcont.hasChildNodes()){
-        cartcont.removeChild(cartcont.firstChild);
+        cartcont.removeChild(cartcont.childNodes[0]);
     }
     updatetotal();
 }
