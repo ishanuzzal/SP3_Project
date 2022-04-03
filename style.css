@@ -103,6 +103,7 @@ text-decoration: none;
   height: 100%;
   padding: 20px;
   z-index: 1;
+  overflow-y:scroll;
   background: var(--bg-color);
   transition: 0.3s;
 }
