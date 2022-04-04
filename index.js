@@ -2,15 +2,10 @@
 let cartIcon = document.querySelector("#cart-icon");
 let cart = document.querySelector(".cart");
 let closeCart = document.querySelector("#close-cart");
-let pricediv = document.getElementsByClassName("price-bd");
 // Open Cart
 cartIcon.onclick = () => {
 cart.classList.add("active");
 };
-
-pricediv.onclick = () => {
-    cart.classList.add("active");
-    };
 
 // CLose Car
 closeCart.onclick = () => {
@@ -79,6 +74,7 @@ for (var i = 0; i < cartItemsNames.length; i++) {
   return;
  }
 }
+cart.classList.add("active");
 var cartBoxContent =`
 <img src="${productImg}" alt="" class="cart-img">
 <div class="detail-box">
@@ -98,9 +94,10 @@ buy.addEventListener("click",buyButtonClicked);
 
 function buyButtonClicked(){
     alert("Ordered is placed");
-    let cartcont = document.getElementById("cart-content")[0];
+    let cartcont = document.getElementsByClassName("cart-content")[0];
+    console.log(cartcont);
     while(cartcont.hasChildNodes()){
-        cartcont.removeChild(cartcont.firstChild);
+        cartcont.removeChild(cartcont.childNodes[0]);
     }
     updatetotal();
 }
