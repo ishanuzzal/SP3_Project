@@ -141,5 +141,5 @@ function updatetotal() {
     total = total + price * quantity;
     }   
 
-    document.getElementsByClassName ("total-price")[0].innerText = "$" + total;
+    document.getElementsByClassName ("total-price")[0].innerText = "৳" + total;
 }

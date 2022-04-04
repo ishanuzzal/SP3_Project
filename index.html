@@ -204,10 +204,10 @@
   </section>
 
   <!-- Partners list -->
-  <div class="container">
+  <div class="container sliderContainer">
     <h2 class="text-center font-weight-bold">Our Partners</h2>
     <section class="customer-logos slider">
-      <div class="slide"><img src="assets\l1.jpg" alt="logo"></div>
+      <div class="slide"><img src="assets/l1.jpg" alt="logo"></div>
       <div class="slide"><img src="images/google.png" alt="logo"></div>
       <div class="slide"><img src="images/instagram.png" alt="logo"></div>
       <div class="slide"><img src="images/nike.png" alt="logo"></div>
@@ -217,12 +217,28 @@
     </section>
   </div>
 
+  <div class="on_mobile">
+    <h2 class="text-center font-weight-bold">Our Partners</h2>
+    
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active"><img src="assets/l1.jpg" alt="logo"></div>
+        <div class="carousel-item"><img src="images/google.png" alt="logo"></div>
+        <div class="carousel-item"><img src="images/instagram.png" alt="logo"></div>
+        <div class="carousel-item"><img src="images/nike.png" alt="logo"></div>
+        <div class="carousel-item"><img src="images/twitter.png" alt="logo"></div>
+        <div class="carousel-item"><img src="images/uber.png" alt="logo"></div>
+        <div class="carousel-item"><img src="images/youtube.png" alt="logo"></div>
+      </div>
+    </div>
+  </div>
+
 
 
 
   <!------About Section------->
 
-  <section id="about">
+  <section id="about py-0">
     <div class="container">
       <h1>About Us</h1>
       <div class="row">
@@ -443,34 +459,6 @@
     </script>
 
 
-
-    <script>
-      $(document).ready(function () {
-        $('.customer-logos').slick({
-          slidesToShow: 6,
-          slidesToScroll: 1,
-          autoplay: true,
-          autoplaySpeed: 1500,
-          arrows: false,
-          dots: false,
-          pauseOnHover: false,
-          responsive: [{
-            breakpoint: 768,
-            setting: {
-              slidesToShow: 4
-            }
-          }, {
-            breakpoint: 520,
-            setting: {
-              slidesToShow: 3
-            }
-          }]
-        });
-      });
-    </script>
-    
-<!------Footer------------>	
-
 <section class="footer">
   <div class="container">
     <div class="row">
@@ -514,6 +502,32 @@
   </div>
 
 </section>
+
+
+    <script>
+      $(document).ready(function () {
+        $('.customer-logos').slick({
+          slidesToShow: 6,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 1500,
+          arrows: false,
+          dots: false,
+          pauseOnHover: false,
+          responsive: [{
+            breakpoint: 768,
+            setting: {
+              slidesToShow: 4
+            }
+          }, {
+            breakpoint: 520,
+            setting: {
+              slidesToShow: 3
+            }
+          }]
+        });
+      });
+    </script>
 </body>
 
 </html>
