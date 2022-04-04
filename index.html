@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Commerce Site</title>
+  <!-- custom css file link  -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/34dda90885.js" crossorigin="anonymous"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+</head>
+
+<body>
+  <header>
+
+    <nav class="navbar navbar-expand-lg navbar-light  py-2 px-4">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Gadget<span>Club</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse p-2 navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#shop">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#partners">Partners</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#aboutus">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa-solid cart-icon fa-cart-arrow-down" id="cart-icon"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!--Header END-->
+  <!-- banner start -->
+  <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="assets/y2020-03-11-03_generated.jpg" class="d-block w-100 img-fluid" alt="...">
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="assets/2391.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/30193.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- Banner end -->
+  <div class="cart">
+    <h2 class="cart-title">Your Cart</h2>
+    <!-- Content -->
+    <div class="cart-content">
+
+    </div>
+    <!-- total price estimator start -->
+    <div class="total">
+      <div class="total-title">Total</div>
+      <div class="total-price">৳0</div>
+    </div>
+    <!-- Buy Button -->
+    <button type="button" style="background-color: #18BDBB; color: white;" class="btn btn-buy">Buy Now</button>
+    <!-- Cart Close -->
+    <i class="fa-solid fa-xmark py-2" id="close-cart"></i>
+  </div>
+  </div>
+  <!-- Shop start -->
+
+  <section class="container shop-sec">
+    <h1 class="my-5">Our Products</h1>
+    <!-- Shop content start -->
+    <div class="shops-content ex">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="assets/p1update2.jpg" alt="Card image cap">
+        <div class="card-body">
+          <p class="product-title">Watch Protector orginal</p>
+          <div class="price-bd">
+            <span class="price">৳ 120<span>
+                <i class="fa-solid fa-cart-plus"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="assets/watch1.jpg" alt="Card image cap">
+        <div class="card-body">
+          <p class="product-title">Colmi p28 plus Smart Watch</p>
+          <div class="price-bd">
+            <span class="price">৳ 620<span>
+                <i class="fa-solid fa-cart-plus"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="assets/p3.jpg" alt="Card image cap">
+        <div class="card-body">
+          <p class="product-title">Realme 9i pro 2022</p>
+          <div class="price-bd">
+            <span class="price">৳ 18890<span>
+                <i class="fa-solid fa-cart-plus"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="assets/p4.jpg" alt="Card image cap">
+        <div class="card-body">
+          <p class="product-title">Xiaomi Airbud Black Wireless Headphone</p>
+          <div class="price-bd">
+            <span class="price">৳ 2200<span>
+                <i class="fa-solid fa-cart-plus"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="assets/p5.jpg" alt="Card image cap">
+        <div class="card-body">
+          <div>
+            <p class="product-title">Xiaomi Black Earphone</p>
+          </div>
+          <div class="price-bd">
+            <span class="price">৳ 995<span>
+                <i class="fa-solid fa-cart-plus"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="assets/p8.jpg" alt="Card image cap">
+        <div class="card-body">
+          <div>
+            <p class="product-title">Samsung RedHot Headphone</p>
+          </div>
+          <div class="price-bd">
+            <span class="price">৳ 12220<span>
+                <i class="fa-solid fa-cart-plus"></i>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="assets/p7.jpg" alt="Card image cap">
+        <div class="card-body">
+          <p class="product-title">Sony 42 LED Display Smart TV</p>
+          <div class="price-bd">
+            <span class="price">৳ 42200<span>
+                <i class="fa-solid fa-cart-plus"></i>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="assets/p8.jpg" alt="Card image cap">
+        <div class="card-body">
+          <div>
+            <p class="product-title">Samsung RedHot Headphone</p>
+          </div>
+          <div class="price-bd">
+            <span class="price">৳ 2500<span>
+                <i class="fa-solid fa-cart-plus"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </section>
+
+  <!-- Partners list -->
+  <div class="container">
+    <h2 class="text-center font-weight-bold">Our Partners</h2>
+    <section class="customer-logos slider">
+      <div class="slide"><img src="assets\l1.jpg" alt="logo"></div>
+      <div class="slide"><img src="images/google.png" alt="logo"></div>
+      <div class="slide"><img src="images/instagram.png" alt="logo"></div>
+      <div class="slide"><img src="images/nike.png" alt="logo"></div>
+      <div class="slide"><img src="images/twitter.png" alt="logo"></div>
+      <div class="slide"><img src="images/uber.png" alt="logo"></div>
+      <div class="slide"><img src="images/youtube.png" alt="logo"></div>
+    </section>
+  </div>
+
+
+
+
+  <!------About Section------->
+
+  <section id="about">
+    <div class="container">
+      <h1>About Us</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="about-content">
+            X is one of the top eCommerce sites in Bangladesh that most popular and oldest, selling electronics among
+            other things.
+            According to popularity, this is Bangladesh's most popular online shopping site at the moment.
+            Gadgets and automobiles may all be found on this massive online shopping mall.
+            Numerous well-known names in the industry have worked with us in the past. In order to meet their needs, X
+            has designed a custom website.
+            X Group operates e-commerce platforms as well as logistical services.
+          </div>
+          <button type="button" class="btn">Read More>>
+
+          </button>
+
+        </div>
+        <div class="col-md-6 skills-bar">
+          <p>Delivery Rate</p>
+          <div class="progress">
+            <div class="progress-bar" style="width:85%;">85%</div>
+          </div>
+
+          <p>Customer Growth</p>
+          <div class="progress">
+            <div class="progress-bar" style="width:70%;">70%</div>
+          </div>
+
+          <p>Happy Employee</p>
+          <div class="progress">
+            <div class="progress-bar" style="width:80%;">90%</div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-----Team------->
+
+    <section id="team">
+
+      <div class="container">
+        <h1>Our Team</h1>
+        <div class="row">
+          <div class="col-md-3 profile-pic text-center">
+            <div class="img-box">
+              <img src="assets/shakil.png" class="img-responsive">
+              <ul>
+                <a href="https://www.facebook.com/shakiil.hossen">
+                  <li><i class="fa fa-facebook"></i></li>
+                </a>
+                <a href="https://twitter.com/login">
+                  <li><i class="fa fa-twitter"></i></li>
+                </a>
+                <a href="https://www.linkedin.com/home">
+                  <li><i class="fa fa-linkedin"></i></li>
+                </a>
+              </ul>
+            </div>
+            <h2>Md Shakil Hossen</h2>
+            <h3>Founder/CEO</h3>
+
+          </div>
+
+          <div class="col-md-3 profile-pic text-center">
+            <div class="img-box">
+              <img src="assets/ishan.png" class="img-responsive">
+              <ul>
+                <a href="https://www.facebook.com/ishan.ishan.5648">
+                  <li><i class="fa fa-facebook"></i></li>
+                </a>
+                <a href="https://twitter.com/login">
+                  <li><i class="fa fa-twitter"></i></li>
+                </a>
+                <a href="https://www.linkedin.com/home">
+                  <li><i class="fa fa-linkedin"></i></li>
+                </a>
+              </ul>
+            </div>
+            <h2>Shafiqul Islam Uzzal </h2>
+            <h3>Founder/CEO</h3>
+
+          </div>
+
+          <div class="col-md-3 profile-pic text-center">
+            <div class="img-box">
+              <img src="assets/shimul.png" class="img-responsive">
+              <ul>
+                <a href="https://www.facebook.com/profile.php?id=100010644520575">
+                  <li><i class="fa fa-facebook"></i></li>
+                </a>
+                <a href="https://twitter.com/login">
+                  <li><i class="fa fa-twitter"></i></li>
+                </a>
+                <a href="https://www.linkedin.com/home">
+                  <li><i class="fa fa-linkedin"></i></li>
+                </a>
+              </ul>
+            </div>
+            <h2>Nazmul Islam Shimul</h2>
+            <h3>General Manager</h3>
+
+          </div>
+
+          <div class="col-md-3 profile-pic text-center">
+            <div class="img-box">
+              <img src="assets/afridi.png" class="img-responsive">
+              <ul>
+                <a href="https://www.facebook.com/profile.php?id=100058734735298">
+                  <li><i class="fa fa-facebook"></i></li>
+                </a>
+                <a href="https://twitter.com/login">
+                  <li><i class="fa fa-twitter"></i></li>
+                </a>
+                <a href="https://www.linkedin.com/home">
+                  <li><i class="fa fa-linkedin"></i></li>
+                </a>
+              </ul>
+            </div>
+            <h2>Shahed Afridi</h2>
+            <h3>Project Manager</h3>
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!------Services Section------->
+
+    <section id="services">
+
+      <div class="container">
+        <h1>Our Services</h1>
+        <div class="row services">
+          <div class="col-md-4 text-center">
+            <div class="icon">
+              <i class="fa fa-phone"></i>
+            </div>
+            <h3> 24/7 Support</h3>
+            <p>on order related queries</p>
+          </div>
+
+          <div class="col-md-4 text-center">
+            <div class="icon">
+              <i class="fa fa-shopping-cart"></i>
+            </div>
+            <h3> Return within 30 days</h3>
+            <p>of receiving your order</p>
+          </div>
+
+          <div class="col-md-4 text-center">
+            <div class="icon">
+              <i class="fa fa-truck"></i>
+            </div>
+            <h3>Get free delivery</h3>
+            <p>on orders above 70 tk inside Dhaka</p>
+            <p>on orders above 120 tk outside Dhaka</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+
+
+    <!------Contact------------>
+
+    <section id="contact">
+
+      <div class="container">
+        <h1>Get In Touch</h1>
+        <div class="row">
+          <div class="col-md-6">
+            <form class="contact-form">
+              <div class="form-group">
+                <input type="text" class="form-control my-2" placeholder="Your Name..">
+              </div>
+              <div class="form-group">
+                <input type="number" class="form-control my-2" placeholder="Phone no.">
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control my-2" placeholder="Email..">
+              </div>
+              <div class="form-group">
+                <textarea class="form-control my-2" rows="4" placeholder="Message.."></textarea>
+              </div>
+
+              <button type="submit" class="btn">Submit</button>
+            </form>
+          </div>
+          <div class="col-md-6 contact-info">
+            <div class="follow"><b><i class="fa fa-map-marker"></i> </b>Dhanmondi, Dhaka, Bangladesh</div>
+            <div class="follow"><b><i class="fa fa-mobile"></i> </b>+8801755780537</div>
+            <div class="follow"><b><i class="fa fa-envelope"></i> </b>gadgetbd@gmail.com</div>
+
+
+            <div class="follow"><label><b>Get Social </b></label>
+              <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+              <a href="https://www.youtube.com/"><i class="fa fa-youtube-play"></i></a>
+              <a href="https://twitter.com/login"><i class="fa fa-twitter"></i></a>
+              <a href="https://myaccount.google.com/"><i class="fa fa-google-plus"></i></a>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+
+
+
+    <script>
+      $(document).ready(function () {
+        $('.customer-logos').slick({
+          slidesToShow: 6,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 1500,
+          arrows: false,
+          dots: false,
+          pauseOnHover: false,
+          responsive: [{
+            breakpoint: 768,
+            setting: {
+              slidesToShow: 4
+            }
+          }, {
+            breakpoint: 520,
+            setting: {
+              slidesToShow: 3
+            }
+          }]
+        });
+      });
+    </script>
+
+
+<!------Footer------------>	
+
+<section class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="footer-col col-md-3">
+        <h4>company</h4>
+        <ul>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Our services</a></li>
+          <li><a href="#">Privacy policy</a></li>
+          <li><a href="#">Affiliate program</a></li>
+        </ul>
+      </div>
+      <div class="footer-col col-md-3">
+        <h4>get help</h4>
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">shipping</a></li>
+          <li><a href="#">returns</a></li>
+          <li><a href="#">order status</a></li>
+          <li><a href="#">payment options</a></li>
+        </ul>
+      </div>
+      <div class="footer-col col-md-3">
+        <h4>online shop</h4>
+        <ul>
+          <li><a href="#">watch</a></li>
+          <li><a href="#">bag</a></li>
+          <li><a href="#">shoes</a></li>
+          <li><a href="#">dress</a></li>
+        </ul>
+      </div>
+      <div class="footer-col col-md-3">
+        <h4>follow us</h4>
+        <div class="social-links">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+</body>
+
+</html>
