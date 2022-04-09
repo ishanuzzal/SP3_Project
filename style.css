@@ -1,7 +1,7 @@
 * {
 	font-family: "Poppins", sans-serif;
 	margin: 0;
-	padding: e;
+	padding: 0;
 	scroll-padding-top: 2rem;
 	scroll-behavior: smooth;
 	box-sizing: border-box;
@@ -15,7 +15,7 @@
   }
   
   .btn {
-	background-color: var(--main-color) !important;
+	background-color: var(--main-color) !important; 
 	color: white !important;
   }
   
@@ -30,7 +30,7 @@
   .nav-link {
 	font-size: 1rem;
 	border: none;
-	color: var(--text-color) !important;
+	color: var(--text-color) !important; 
   }
   
   .nav-link:hover {
@@ -52,7 +52,7 @@
 	display: none;
   }
   
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 750px) {
 	.carousel-inner .carousel-item img {
 	  height: 40vh !important;
 	  max-width: 100% !important;
@@ -246,6 +246,10 @@
 	color: black;
 	padding: 15px 0px;
   }
+
+  .ab{
+	  text-align: justify;
+  }
   
   #about .btn {
 	margin-top: 20px;
@@ -271,7 +275,7 @@
   }
   
   #services {
-	background: black;
+	background: #24262b;
 	background-size: cover;
 	background-position: center;
 	color: #555 !important;
@@ -414,8 +418,8 @@
   
   .img-responsive {
 	height: 250px;
-	width: 200px;
-	margin: 0px 50px;
+	max-width: 100%;
+	margin: 0px 10px;
   }
   
   .progress-bar {
@@ -451,8 +455,7 @@
 	font-weight: bold;
   }
 
-<!------Footer------------>	
-
+/* footer */
 #footer{
 	line-height: 1.5;
 	font-family: 'Poppins', sans-serif;
